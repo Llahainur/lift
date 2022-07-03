@@ -10,6 +10,7 @@ public:
     Controller(Lift *lift);
     void call(int floor);
     void drive();
+    void drive_till_the_end();
     int show_current_floor();
 
 private:

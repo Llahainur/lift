@@ -5,11 +5,11 @@
 class Lift
 {
 private:
-    const int speed=0;
-    int current_floor;
-    int max_floors;
-    const int min_floors = 1;
+    const int speed=500;
+    int current_floor;    
 public:
+    int max_floors;
+    int min_floors = 1;
     Lift();
     Lift(int max);
 

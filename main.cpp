@@ -8,13 +8,14 @@ int main(int argc, char *argv[])
     //MainWindow w;
     //w.show();
     //return a.exec();
-    std::unique_ptr<Lift> lift{ new Lift(6) };
+    std::unique_ptr<Lift> lift{ new Lift(10) };
     std::unique_ptr<Controller> control{ new Controller(lift.operator->()) };
 
     control->call(5);
+    control->call(3);
+    control->call(10);
     qDebug() << "called";
-    control->drive();
+    control->drive_till_the_end();
 
-    qDebug() << control->show_current_floor();
     return 0;
 }

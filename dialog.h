@@ -2,6 +2,10 @@
 #define DIALOG_H
 
 #include <QDialog>
+#include "ui_dialog.h"
+#include "mainwindow.h"
+#include "lift.h"
+#include "controller.h"
 
 namespace Ui {
 class Dialog;
@@ -17,11 +21,9 @@ public:
 
 private:
     Ui::Dialog *ui;
-signals:
-    void on_click_OK();
-private slots:
-    void make_mainWindow(int floors);
 
+private slots:
+    void on_pushButton_clicked();
 };
 
 #endif // DIALOG_H

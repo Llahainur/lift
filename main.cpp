@@ -1,6 +1,4 @@
-#include "mainwindow.h"
 #include "dialog.h"
-#include "controller.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
@@ -9,9 +7,8 @@ int main(int argc, char *argv[])
     Dialog d;
     d.show();
 
-    //MainWindow w;
-    //w.show();
     int exec = a.exec();
+
     //std::unique_ptr<Lift> lift{ new Lift(10) };
     //std::unique_ptr<Controller> control{ new Controller(lift.operator->()) };
 

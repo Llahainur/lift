@@ -1,5 +1,6 @@
 #include "lift.h"
-#include "windows.h"
+
+
 Lift::Lift()
 {
    this->current_floor=1;

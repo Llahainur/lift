@@ -10,16 +10,19 @@ CONFIG += c++11
 
 SOURCES += \
     controller.cpp \
+    dialog.cpp \
     lift.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     controller.h \
+    dialog.h \
     lift.h \
     mainwindow.h
 
 FORMS += \
+    dialog.ui \
     mainwindow.ui
 
 # Default rules for deployment.

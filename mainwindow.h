@@ -4,7 +4,7 @@
 #include "lift.h"
 #include "controller.h"
 #include "ui_mainwindow.h"
-
+#include <QLabel>
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -22,5 +22,10 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    Lift * lift;
+    Controller * control;
+    QLabel * labels[];
+public slots:
+    void paintEvent(QPaintEvent *event);
 };
 #endif // MAINWINDOW_H

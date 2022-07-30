@@ -12,6 +12,7 @@ public:
     void drive();
     void drive_till_the_end();
     int show_current_floor();
+    bool is_in_queue(int floor);
 
 private:
     std::vector<int> queue;

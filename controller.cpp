@@ -46,3 +46,10 @@ void::Controller::drive_till_the_end(){
         qDebug()<<this->show_current_floor();
     }
 }
+
+bool Controller::is_in_queue(int floor){
+    if ( std::find(queue.begin(), queue.end(), floor) != queue.end() )
+        return true;
+    else
+        return false;
+}

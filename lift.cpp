@@ -5,6 +5,7 @@ Lift::Lift()
 {
    this->current_floor=1;
 }
+
 Lift::Lift(int max){
     this->current_floor=1;
     this->max_floors=max;
